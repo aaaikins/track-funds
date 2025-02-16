@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Container */
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input Fields */
+form input {
+    width: 220px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+form input:focus {
+    border-color: cyan;
+}
+
+/* Date Input */
+form input[type="datetime-local"] {
+    color: white;
+}
+
+/* Form Layout */
+form div.basic {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+form div.description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Button Styling */
+form button {
+    width: 220px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: #00bcd4;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #008ba3;
+}
+
+/* Transactions */
+div.transactions {
+    margin-top: 20px;
+}
+
+div.transaction {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #30313d;
+    transition: background 0.2s ease-in-out;
+}
+
+div.transaction:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Transaction Details */
+div.transaction div.name {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+div.transaction div.description {
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+div.transaction:first-child {
+    border-top: 0;
+}
+
+div.transaction div.datetime {
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+/* Price Styling */
+div.right {
+    text-align: right;
+}
+
+div.right .price {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+div.right .price.red {
+    color: #ff4d4d;
+}
+
+div.right .price.green {
+    color: #4caf50;
+}
